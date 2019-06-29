@@ -1,51 +1,30 @@
-body {
-  font-family: "Lato", sans-serif;
+.wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
-.sidenav {
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-.sidenav-right {
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-
-
-.sidenav a, .sidenav-right a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-}
-
-.sidenav a:hover, .sidenav-right a {
-  color: #f1f1f1;
+.main,
+.sidebar {
+  padding: 15px;
+  border:1px solid #2292bb;
+  background-image: linear-gradient(top, #0c2035 0%, #2292bb 100%);
+  background-image: -webkit-linear-gradient(top, #0c2035 0%, #2292bb 100%);
+  background-size: 100vw 100vh;
+  text-align: center;
 }
 
 .main {
-  margin-left: 160px; /* Same as the width of the sidenav */
-  margin-right: 160px;
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
+  width: 80%;
+  height: 100vh;
+  text-align: center;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+.sidebar {
+  width: 20%;
+  height: 100vh;
 }
+
+body {
+  background-color: #ccc;
+  font-family: sans-serif;
+  }

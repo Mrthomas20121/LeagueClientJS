@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>
+  League Of Legends Client
+  </title>
+  <!-- css and jquery -->
+  <script>
+    window.$ = window.jQuery = require('../node_modules/jquery/dist/jquery.js');
+  </script>
+  <link rel="stylesheet" href="../node_modules/bootswatch/dist/cyborg/bootstrap.min.css"/>
+  <link rel="stylesheet" href="./css/league.css"/>
+  <link rel="stylesheet" href="./css/main.css"/>
+</head>
+<body ondragstart="return false;" ondrop="return false;">
+
+  <div class="wrapper">
+    <div class="main">
+      Login screen goes here
+    </div>
+    <div class="sidebar">
+      <p>League of legends version {version}</p>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <p>Login:</p>
+      <div class="login">
+        <label for="username">Username:</label><input name="username" type="text" class="form-control" placeholder="Username"/>
+        <label for="password">Password:</label><input name="password" type="text" class="form-control" placeholder="Password"/>
+        <button class="btn btn-success" onclick="redirect('index.html')">Login</button>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap js Loading -->
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script>
+    function redirect(page) {
+      user = document.getElementsByTagName('input');
+      location = `./${page}?user=${user[0].value}`;
+    }
+  </script>
+</body>
+</html>

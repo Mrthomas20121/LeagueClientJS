@@ -32,7 +32,7 @@ function createWindow() {
 
   // load index.html
   win.loadURL(url.format({
-    pathname: path.resolve(__dirname, 'assets/index.html'),
+    pathname: path.resolve(__dirname, 'assets/login.html'),
     protocol: 'file:',
     slashes: true
     }));
