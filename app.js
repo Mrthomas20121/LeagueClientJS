@@ -18,8 +18,7 @@ function createWindow() {
     width: 1280,
     height: 720,
     // app icon
-    icon: path.join(__dirname, 'assets/icons/app.png'),
-    frame: false
+    icon: path.join(__dirname, 'assets/icons/app.png')
    });
 
   app.on('window-all-closed', () => {

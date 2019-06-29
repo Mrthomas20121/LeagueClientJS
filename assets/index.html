@@ -1,20 +1,56 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <meta charset="UTF-8"/>
-    <title>
-    Mrthomas20121's tellraw generator
-    </title>
-    <!-- css and jquery -->
-    <script>
-      window.$ = window.jQuery = require('../node_modules/jquery/dist/jquery.js');
-    </script>
-    <link rel="stylesheet" href="../node_modules/bootswatch/dist/cyborg/bootstrap.min.css"/>
-    <link rel="stylesheet" href="./css/league.css"/>
+  <meta charset="UTF-8"/>
+  <title>
+  League Of Legends Client
+  </title>
+  <!-- css and jquery -->
+  <script>
+    window.$ = window.jQuery = require('../node_modules/jquery/dist/jquery.js');
+  </script>
+  <link rel="stylesheet" href="../node_modules/bootswatch/dist/cyborg/bootstrap.min.css"/>
+  <link rel="stylesheet" href="./css/league.css"/>
 </head>
 <body ondragstart="return false;" ondrop="return false;">
-    <!-- Bootstrap js Loading -->
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
-  </div>
+
+  <nav class="navbar navbar-expand-lg">
+      <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
+          <ul class="navbar-nav ml-auto text-center">
+              <li class="nav-item active">
+                  <a class="nav-link" href="#">Play Game</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Profile</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Collection</a>
+              </li>
+          </ul>
+      </div>
+      <div class="mx-auto my-2 order-0 order-md-1 position-relative">
+          <a class="mx-auto" href="#">
+              <img src="./images/logo_league.png" class="rounded-circle">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+      </div>
+      <div class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-md-2">
+          <ul class="navbar-nav mr-auto text-center">
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Your Shop</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Hextech crafting</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Shop</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+  <!-- Bootstrap js Loading -->
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
 </html>
